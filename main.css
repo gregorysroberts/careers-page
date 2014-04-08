@@ -50,3 +50,60 @@ h1 {
 	text-decoration: none;
 	padding: 6px;
 }
+
+.videoContainer {
+	padding-top: 0px;
+	margin-bottom: 0px;
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+}
+
+.videoHeroMobile {
+	width: 475px;
+    background-size: 100% auto;
+    background-position: top center;
+    background-image: url('http://static.insidesales.com/assets/images/science-of-sales-screenshot-mobile2.jpg');
+    /*height: 234px;*/
+    height: 0;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-bottom: 31%;
+    display: inline-block;
+    float: left;
+}
+
+.videoHeroMobile2 {
+    background-size: 100% auto;
+    background-position: top center;
+    background-image: url('/images/do-good-foundation-video.jpg');
+    /*height: 234px;*/
+    height: 0;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-bottom: 62.3%;
+}
+
+#frameVideo {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+} 
+
+#circlePlay {
+    width: 15%;
+}
+
+#circlePlay2 {
+    width: 15%;
+}
+
+.videoPlay {
+    margin-top: 5em;
+}
+
+.what-we-do-content {
+	width: 485px;
+	display: inline-block;
+	float: right;
+}

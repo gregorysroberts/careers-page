@@ -4,6 +4,9 @@
 <!-- 	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css"> -->
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="main.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
 </head>
 <body>
 	<!--Banner-->
@@ -17,12 +20,24 @@
 	</div>
 
 	<!--What We Do Section-->
-	<div class="pure-g-r">
+	<div class="what-we-do">
 		<!--Commercial Video-->
-		<div class="pure-u-1-2">
-		</div>
+        <div class="videoHeroMobile">
+            <a href="#" data-reveal-id="myModal">
+                <img id="circlePlay" class="videoPlay" src="http://static.insidesales.com/assets/images/video-play-white-2.png" onmouseover="swapIcon();" onmouseout="replaceIcon();">
+            </a>
+        </div>
 		<!--What We Do Content-->
-		<div class="pure-u-1-2">
+		<div class="what-we-do-content">
+			<h2>What We Do</h2>
+			<p>InsideSales.com is the market leader in the emerging 
+			sales acceleration market. Breakthrough innovations in 
+			cloud-based communications, gamiﬁcation, predictive 
+			analytics and data visualization have helped make the 
+			company one of the hottest employers in the United 
+			States. In fact, Inc. Magazine recently recognized the 
+			company as the 5th fastest growing software company 
+			in the country.</p>
 		</div>
 	</div>
 
@@ -62,5 +77,54 @@
 
 	</div>
 
+
+
+
+
+<!--Video Modal
+     <div id="myModal" class="reveal-modal">
+        <div class="videoContainer">
+            <iframe id="frameVideo" src="//www.youtube.com/embed/lNMtQ4W--EI?rel=0" frameborder="0" allowfullscreen style="width:100%; height:100%;"></iframe>
+        </div>
+
+	    <script>
+
+	        var video = $("#frameVideo").attr("src");
+	    
+	        $('#myModal').bind('closed', function() {
+	            console.log("myModal closed");
+	            $("#frameVideo").attr("src","");
+	            $("#frameVideo").attr("src",video);
+	        });
+
+	    </script>
+
+
+	     <script> 	 	
+	        function swapIcon() {
+	            document.getElementById('circlePlay').src = "http://static.insidesales.com/assets/images/video-play-blue-2.png"; 		
+	        }
+	        function replaceIcon() {
+	            document.getElementById('circlePlay').src = "http://static.insidesales.com/assets/images/video-play-white-2.png"; 	 		
+	        } 	 		
+	        $("#circlePlay").click(function() { 			        
+	            $("#frameVideo").attr("src","//www.youtube.com/embed/ed4tz5NW0PI?rel=0&autoplay=1"); 	 		
+	        });
+
+
+
+	        function swapIcon2() {
+	            document.getElementById('circlePlay2').src = "http://static.insidesales.com/assets/images/video-play-blue-2.png"; 		
+	        }
+	        function replaceIcon2() {
+	            document.getElementById('circlePlay2').src = "http://static.insidesales.com/assets/images/video-play-white-2.png"; 	 		
+	        } 	 		
+	        $("#circlePlay2").click(function() { 			        
+	            $("#frameVideo").attr("src","//www.youtube.com/embed/WAd9bitTn18?rel=0&autoplay=1"); 	 		
+	        });
+
+	      </script>
+	</div>
+-->
 </body>
 </html>
