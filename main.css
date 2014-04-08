@@ -1,0 +1,52 @@
+html {
+	background-color: #ededed;
+}
+
+body{
+	font-family: Open Sans, Arial, sans-serif !important;
+	width: 960px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2.83em;
+	font-weight: normal;
+	margin-top: 0px;
+}
+
+
+.banner {
+	background-image: url('http://www.insidesales.com/images/careers-banner.jpg'); 
+	background-size: 960px 635px;
+	background-repeat: no-repeat;
+	height: 449px;
+	color: #ffffff;
+}
+
+.banner-content {
+	padding-top: 124px;
+	margin-left: 495px;
+	margin-top: 0px;
+}
+
+.banner-content h1 {
+	font-size: 2.83em;
+	font-weight: normal;
+}
+
+
+.banner-content p {
+	font-size: 0.9375em;
+	font-weight: 200;
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+
+.pure-button {
+	font-size: 0.9375em;
+	background-color: #e8310e;
+	border-radius: 4px;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 6px;
+}
