@@ -7,6 +7,7 @@ body{
 	width: 960px;
 	margin: 0 auto;
 	box-shadow: 0px 0px 4px #888888;
+	color: #434b4d;
 }
 
 h1 {
@@ -81,10 +82,9 @@ h1 {
     background-position: top center;
     background-image: url('http://www.insidesales.com/images/do-good-foundation-video.jpg');
     /*height: 234px;*/
-    height: 0;
+    height: 285px;
     background-repeat: no-repeat;
     text-align: center;
-    padding-bottom: 31%;
     display: inline-block;
     float: right;
 }
@@ -118,6 +118,14 @@ h1 {
 	margin: 0;
 }
 
+.what-we-do-content h2 {
+	color: #3e4546;
+}
+
+.what-we-do-content p {
+	color: #636466;
+}
+
 h2 {
 	font-weight: 200;
 	font-size: 1.875em;
@@ -135,9 +143,14 @@ h2 {
 	padding: 37px 50px 0 70px;
 }
 
+.benefits h2 {
+	color: #3e4546;
+}
+
 .benefits p {
 	font-size: 0.9375em;
 	margin: 0;
+	color: #636466;
 }
 
 .benefits-content {
@@ -150,6 +163,8 @@ h2 {
 .do-good {
 	clear: both;
 	height: 285px;
+	margin: 0;
+	background-color: #434b4d;
 }
 
 .do-good-content {
@@ -159,6 +174,39 @@ h2 {
 	display: inline-block;
 	float: left;
 	background-color: #ffffff;
-	height: 253px;
+	height: 248px;
 	margin: 0;
 }
+
+.do-good-content {
+	color: #3e4546;
+}
+
+.do-good-content p {
+	color: 
+	margin: 5px 0 0 0;
+}
+
+.open-positions {
+	clear: both;
+	margin: 0;
+	background-color: #ffffff;
+}
+
+.open-positions-banner {
+	height: 40px;
+	padding-left: 70px;
+	background-color: #434b4d;
+	color: #ffffff;
+	border-bottom: 5px solid #e9310e;
+}
+}
+
+.departments {
+	background-color: #ffffff;
+	height: 99px;
+}
+
+.department {
+	display: inline-block;
+} 
