@@ -115,7 +115,7 @@ h1 {
 	margin: 0;
 }
 
-.what-we-do-content h2 {
+h2 {
 	font-weight: 200;
 	font-size: 1.875em;
 	margin: 0;
@@ -124,4 +124,22 @@ h1 {
 .what-we-do-content p {
 	margin: 0;
 	padding-top: 6px;
+}
+
+.benefits {
+	clear: both;
+	height: 185px;
+	padding: 37px 50px 0 70px;
+}
+
+.benefits p {
+	font-size: 0.9375em;
+	margin: 0;
+}
+
+.benefits-content {
+	padding-top: 37px;
+	display: inline-block;
+	width: 256px;
+	padding-right: 20px;
 }
