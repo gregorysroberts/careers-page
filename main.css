@@ -76,14 +76,17 @@ h1 {
 }
 
 .videoHeroMobile2 {
+	width: 509px;
     background-size: 100% auto;
     background-position: top center;
-    background-image: url('/images/do-good-foundation-video.jpg');
+    background-image: url('http://www.insidesales.com/images/do-good-foundation-video.jpg');
     /*height: 234px;*/
     height: 0;
     background-repeat: no-repeat;
     text-align: center;
-    padding-bottom: 62.3%;
+    padding-bottom: 31%;
+    display: inline-block;
+    float: right;
 }
 
 #frameVideo {
@@ -142,4 +145,20 @@ h2 {
 	display: inline-block;
 	width: 256px;
 	padding-right: 20px;
+}
+
+.do-good {
+	clear: both;
+	height: 285px;
+}
+
+.do-good-content {
+	padding: 37px 20px 0px 70px;
+	font-weight: 200;
+	width: 361px;
+	display: inline-block;
+	float: left;
+	background-color: #ffffff;
+	height: 253px;
+	margin: 0;
 }
