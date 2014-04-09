@@ -6,6 +6,7 @@ body{
 	font-family: Open Sans, Arial, sans-serif !important;
 	width: 960px;
 	margin: 0 auto;
+	box-shadow: 0px 0px 4px #888888;
 }
 
 h1 {
@@ -21,6 +22,7 @@ h1 {
 	background-repeat: no-repeat;
 	height: 449px;
 	color: #ffffff;
+	border-bottom: 5px solid #e9310e;
 }
 
 .banner-content {
@@ -103,7 +105,23 @@ h1 {
 }
 
 .what-we-do-content {
-	width: 485px;
+	padding: 42px 70px 0px 20px;
+	font-weight: 200;
+	width: 395px;
 	display: inline-block;
 	float: right;
+	background-color: #ffffff;
+	height: 253px;
+	margin: 0;
+}
+
+.what-we-do-content h2 {
+	font-weight: 200;
+	font-size: 1.875em;
+	margin: 0;
+}
+
+.what-we-do-content p {
+	margin: 0;
+	padding-top: 6px;
 }
