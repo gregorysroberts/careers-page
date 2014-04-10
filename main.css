@@ -52,6 +52,7 @@ h1 {
 	color: #ffffff;
 	text-decoration: none;
 	padding: 6px;
+	font-weight: 200;
 }
 
 .videoContainer {
@@ -200,13 +201,54 @@ h2 {
 	color: #ffffff;
 	border-bottom: 5px solid #e9310e;
 }
-}
 
 .departments {
 	background-color: #ffffff;
 	height: 99px;
+	text-align: center;
 }
 
 .department {
 	display: inline-block;
+	padding: 0 8px;
+}
+
+.department p {
+	font-size: 0.9375em;
 } 
+
+.department-listing {
+	margin: 0 70px;
+}
+
+.department-title {
+	border-bottom: 1px solid #dedede;
+}
+
+.department-title h3 {
+	margin: 0 0 10px 0;
+	font-weight: 200;
+	color: #434b4d;
+	font-size: 1.3125em;
+}
+
+.position {
+	display: inline-block;
+	width: 610px;
+	margin-top: 18px;
+	margin-bottom: 10px;
+}
+
+.position p {
+	margin: 0px;
+	font-size: 0.9375em;
+}
+
+.apply	{
+	display: inline-block;
+	width: 190px;
+}
+
+.apply-button {
+	padding: 4px 18.5px;
+}
