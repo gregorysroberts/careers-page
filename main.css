@@ -204,8 +204,8 @@ h2 {
 
 .departments {
 	background-color: #ffffff;
-	height: 99px;
 	text-align: center;
+	margin-bottom: -10px;
 }
 
 .department {
@@ -218,7 +218,7 @@ h2 {
 } 
 
 .department-listing {
-	margin: 0 70px;
+	margin: 53px 70px 0 70px;
 }
 
 .department-title {
@@ -248,6 +248,8 @@ h2 {
 .apply	{
 	display: inline-block;
 	width: 190px;
+	float: right;
+	margin-top: 46px;
 }
 
 .apply-button {
