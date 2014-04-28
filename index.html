@@ -1,284 +1,308 @@
-<html>
+<html ng-app="jobs">
 <head>
 	<title>Careers at InsideSales.com</title>
 <!-- 	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css"> -->
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.6/angular.min.js"></script>
+	<script type="text/javascript" src="http://angular-ui.github.io/ui-router/release/angular-ui-router.min.js"></script>
 
 </head>
 <body>
 	<!--Banner-->
-	<div class="banner">
-		<div class="banner-content">
-			<h1>InsideSales.com Careers</h1>
-			<p>Here's a bit of what you can 
-			<br />expect when you work here:</p>
-			<a class="pure-button" href="">See all Job Openings</a>
-		</div>
-	</div>
-
-	<!--What We Do Section-->
-	<div class="what-we-do">
-		<!--Commercial Video-->
-        <div class="videoHeroMobile">
-            <a href="#" data-reveal-id="myModal">
-                <img id="circlePlay" class="videoPlay" src="http://static.insidesales.com/assets/images/video-play-white-2.png" onmouseover="swapIcon();" onmouseout="replaceIcon();">
-            </a>
-        </div>
-		<!--What We Do Content-->
-		<div class="what-we-do-content">
-			<h2>What We Do</h2>
-			<p>InsideSales.com is the market leader in the emerging 
-			sales acceleration market. Breakthrough innovations in 
-			cloud-based communications, gamiﬁcation, predictive 
-			analytics and data visualization have helped make the 
-			company one of the hottest employers in the United 
-			States. In fact, Inc. Magazine recently recognized the 
-			company as the 5th fastest growing software company 
-			in the country.</p>
-		</div>
-	</div>
-
-	<!--Employee Benefits-->
-	<div class="benefits">
-		<!--Benefits Header-->
-		<div class="benefits-title">
-			<h2>Employee Benefits</h2>
-		</div>
-		<!--Benefits lists-->
-		<div class="benefits-content">
-			<p><b>Full Healthcare Coverage</b></p>
-			<p>InsideSales.com offers top-tier medical, dental and vision coverage</p>
-		</div>
-		<div class="benefits-content">
-			<p><b>401k Retirement PLan</b></p>
-			<p>We generously match employee retirement contributions</p>
-		</div>
-		<div class="benefits-content">
-			<p><b>Onsite Perks</b></p>
-			<p>Employer paid gym membership, and well-stocked drink fridges</p>
-		</div>
-	</div>
-
-	<!--Do Good Foundation-->
-	<div class="do-good">
-		<!--Do Good Foundation Content-->
-		<div class="do-good-content">
-			<h2>Do Good Foundation</h2>
-			<p>At InsideSales.com, we strive to use our position in the 
-			industry to help our local community better itself through 
-			our Do Good Foundation. Our foundation donates 1% of 
-			our employee time, 1% of our company revenue, and 1% of 
-			our product to local, worthy causes.</p>
-		</div>
-		<!--Do Good Video-->
-    	<div class="videoHeroMobile2">
-            <a href="#" data-reveal-id="myModal">
-                <img id="circlePlay2" class="videoPlay" src="http://static.insidesales.com/assets/images/video-play-white-2.png" onmouseover="swapIcon2();" onmouseout="replaceIcon2();">
-            </a>
-       </div>
-    </div>
-
-	<!--Open Positions-->
-	<div class="open-positions">
-		<!--Open Positions Header-->
-		<div class="open-positions-banner">
-			<h2>Open Positions</h2>
-		</div>
-		<!--Departments-->
-		<div class="departments">
-			<!--div class="department">
-				<p>Administration</p>
-			</div-->
-			<div class="department">
-				<p>Client Services</p>
+	<div class="update-container">
+		<div class="pure-g-r careers-banner">
+			<div class="pure-u-1 careers-banner-content">
+				<h1>InsideSales.com<br /> Careers</h1>
+				<p>Here's a bit of what you can 
+				<br />expect when you work here:</p>
+				<a class="pure-button" href="#open-positions">See all Job Openings</a>
 			</div>
-			<div class="department">
-				<p>Marketing</p>
+		</div>
+
+		<!--What We Do Section-->
+		<div class="pure-g-r">
+			<!--Commercial Video-->
+	        <div class="pure-u-1-2 videoHeroMobile">
+	            <a href="#" data-reveal-id="myModal">
+	                <img id="circlePlay" class="videoPlay" src="http://static.insidesales.com/assets/images/video-play-white-2.png" onmouseover="swapIcon();" onmouseout="replaceIcon();">
+	            </a>
+	        </div>
+			<!--What We Do Content-->
+			<div class="pure-u-1-2 what-we-do-content">
+				<h2>What We Do</h2>
+				<p>InsideSales.com is the market leader in the emerging sales acceleration market. Breakthrough innovations in cloud-based communications, gamiﬁcation, predictive analytics and data visualization have helped make the company one of the hottest employers in the United States. In fact, Inc. Magazine recently recognized the company as the 5th fastest growing software company in the country.</p>
 			</div>
-			<div class="department">
-				<p>Information Systems</p>
+		</div>
+
+		<!--Employee Benefits-->
+		<div class="pure-g-r benefits">
+			<div class="pure-u-1">
+				<!--Benefits Header-->
+				<div class="benefits-title">
+					<h2>Employee Benefits</h2>
+				</div>
+				<!--Benefits lists-->
+				<div class="pure-g-r">
+					<div class="pure-u-1-3 benefits-content">
+						<p><b>Full Healthcare Coverage</b></p>
+						<p>InsideSales.com offers top-tier medical, dental and vision coverage</p>
+					</div>
+					<div class="pure-u-1-3 benefits-content">
+						<p><b>401k Retirement PLan</b></p>
+						<p>We generously match employee retirement contributions</p>
+					</div>
+					<div class="pure-u-1-3 benefits-content">
+						<p><b>Onsite Perks</b></p>
+						<p>Employer paid gym membership, and well-stocked drink fridges</p>
+					</div>
+				</div>
 			</div>
-			<div class="department">
-				<p>Sales</p>
+		</div>
+
+		<!--Do Good Foundation-->
+		<div class="pure-g-r do-good">
+			<!--Do Good Foundation Content-->
+			<div class="pure-u-1-2 do-good-content">
+				<h2>Do Good Foundation</h2>
+				<p>At InsideSales.com, we strive to use our position in the industry to help our local community better itself through our Do Good Foundation. Our foundation donates 1% of our employee time, 1% of our company revenue, and 1% of our product to local, worthy causes.</p>
 			</div>
-			<div class="department">
-				<p>Software Development</p>
+			<!--Do Good Video-->
+	    	<div class="pure-u-1-2 videoHeroMobile2">
+	            <a href="#" data-reveal-id="myModal">
+	                <img id="circlePlay2" class="videoPlay" src="http://static.insidesales.com/assets/images/video-play-white-2.png" onmouseover="swapIcon2();" onmouseout="replaceIcon2();">
+	            </a>
+	       </div>
+	    </div>
+
+		<!--Open Positions-->
+		<div class="pure-g-r">
+			<!--Open Positions Header-->
+			<div class="pure-u-1 open-positions-banner">
+				<h2 id="open-positions">Open Positions</h2>
+			</div>
+		</div>
+			<!--Departments-->
+		<div class="pure-g-r departments">
+			<div class="pure-u-1-6 department">
+				<p><a href="#administration">Administration</p>
+			</div>
+			<div class="pure-u-1-6 department">
+				<p><a href="#client-services">Client Services</a></p>
+			</div>
+			<div class="pure-u-1-6 department">
+				<p><a href="#marketing">Marketing</a></p>
+			</div>
+			<div class="pure-u-1-6 department">
+				<p><a href="#information-systems">Information Systems</a></p>
+			</div>
+			<div class="pure-u-1-6 department">
+				<p><a href="#sales">Sales</a></p>
+			</div>
+			<div class="pure-u-1-6 department">
+				<p><a href="#software-development">Software Development</a></p>
 			</div>
 		</div>
 
 		<div class="department-listing">
 			<div class="department-title">
-				<h3>Client Services</h3>
+				<h3 id="client-services">Client Services</h3>
 			</div>
-			<div class="position">
-				<p><b>Product Specialist</b></p>
-				<p>The Product Specialist will become an expert in the InsideSales.com product's technical workings and practical business application. If you are looking for a career in technical support or business consulting, software implementation, enterprise account management, QA, or software development, this position will provide you with the necessary skills and knowledge.</p>
-			</div>
-			<div class="apply">
-				<a class="pure-button apply-button" href="">Learn more and Apply</a>
-			</div>
-
-			<div class="position">
-				<p><b>Customer Account Executive</b></p>
-				<p>The Customer Account Executives will effectively manage our clients and key relationships. We provide our team with the current tools and resources, as well as outstanding leadership so they may support, sell, and succeed. Our customers benefit from their seasoned leadership, business knowledge, and their deep understanding of our technology and offerings.</p>
-			</div>
-			<div class="apply">
-				<a class="pure-button apply-button" href="">Learn more and Apply</a>
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Product Specialist</b></p>
+					<p>The Product Specialist will become an expert in the InsideSales.com product's technical workings and practical business application. If you are looking for a career in technical support or business consulting, software implementation, enterprise account management, QA, or software development, this position will provide you with the necessary skills and knowledge.</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="http://www.insidesales.com/general-product-specialist">Learn more and Apply</a>
+				</div>
 			</div>
 
-			<div class="position">
-				<p><b>Implementation Consultant</b></p>
-				<p>Implementation Consultants oversee the technical setup and configuration for our clients as well as consult with clients on best practices. They leverage creativity and logical skills to build out our sales communication platform for a wide variety of industries. They develop strong relationships with customer business, sales and engineering personnel to ensure complete customer satisfaction and adoption.</p>
-			</div>
-			<div class="apply">
-				<a class="pure-button apply-button" href="">Learn more and Apply</a>
-			</div>
-
-			<div class="position">
-				<p><b>Implementation Specialist</b></p>
-				<p>We are looking for a talented Implementation Specialist who can provide bug fixes and advanced solutions for our applications. Data Visualization and process structure will be part of your daily projects, having an understanding of programming patterns and styles as: Object Oriented Programming (OOP), Object Relational Mapping(ORM), Model View Controller (MVC), REST / SOAP / WSDL.</p>
-			</div>
-			<div class="apply">
-				<a class="pure-button apply-button" href="">Learn more and Apply</a>
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Customer Account Executive</b></p>
+					<p>The Customer Account Executives will effectively manage our clients and key relationships. We provide our team with the current tools and resources, as well as outstanding leadership so they may support, sell, and succeed. Our customers benefit from their seasoned leadership, business knowledge, and their deep understanding of our technology and offerings.</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
 			</div>
 
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Implementation Consultant</b></p>
+					<p>Implementation Consultants oversee the technical setup and configuration for our clients as well as consult with clients on best practices. They leverage creativity and logical skills to build out our sales communication platform for a wide variety of industries. They develop strong relationships with customer business, sales and engineering personnel to ensure complete customer satisfaction and adoption.</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
+			</div>
+
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Implementation Specialist</b></p>
+					<p>We are looking for a talented Implementation Specialist who can provide bug fixes and advanced solutions for our applications. Data Visualization and process structure will be part of your daily projects, having an understanding of programming patterns and styles as: Object Oriented Programming (OOP), Object Relational Mapping(ORM), Model View Controller (MVC), REST / SOAP / WSDL.</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
+			</div>
+		</div><!--Section-->
+
+		<div class="department-listing">
+			<div class="department-title">
+				<h3 id="marketing">Marketing</h3>
+			</div>
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Data Visualization Developer</b></p>
+					<p>The Data Visualization Developer will work collaboratively with designers and developers to create engaging and dynamic digital visuals across web-based and stand alone platforms. They will use programming paradigms and styles such as: Object Oriented Programming, Model View Controller, REST / WSDL / SOAP, and Object Relational Mapping.</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
+			</div>
+
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Event Specialist</b></p>
+					<p>The Event Specialist must be high-energy, detail oriented, and slightly crazy to help us pull of some of the biggest events in the sales and marketing space. We want someone that can think of event solutions outside of the box. We have an aggressive events schedule lined up and we need an individual that is willing to jump in head first and make a difference.</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
+			</div>
+
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Front-end Web Developer</b></p>
+					<p>The Front End Web Developer will be responsible for front-end development and maintenance of our web properties. They will be responsible for building lead generation landing pages for email, paid search, and other channels. The ideal candidate will have front-end web experience, lead generation experience, a knowledge of landing page optimization principles, a love for building beautiful web pages, and an online portfolio to prove it.</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
+			</div>
+
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Product Manager</b></p>
+					<p>The product team at InsideSales.com is looking for an aspiring product manager who wants to work with one of the fastest growing SaaS companies in the country as a Product Manager. The position offers someone with a love of technology, research, and client interaction the chance to begin a career in product management.</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
+			</div>
+
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Website Testing Specialist</b></p>
+					<p>The Website Testing and Analytics Specialist will be responsible for website A/B testing by channel, and tracking website key performance indicators. If you#39re a fan of Avinash Kaushik and Tim Ash and can help us take our website testing process to the next level then please apply.</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
+			</div>
+		</div><!--Marketing section-->
+
+		<div class="department-listing">
+			<div class="department-title">
+				<h3 id="information-systems">Information Systems</h3>
+			</div>
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Disaster Recovery Engineer</b></p>
+					<p>We are looking for a Disaster Recovery Engineer to develop procedures to ensure critical business functions can resume, that data loss is minimized, and that failed systems are repaired or replaced quickly. They will apply a comprehensive knowledge of system disaster recovery and system capacity planning. They will play a key role in identifying and securing back-up systems and written policies and procedures, leveraging the latest trends in technology to help develop creative solutions that meet the needs of our customers.</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
+			</div>
+
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Network Operations Specialist</b></p>
+					<p>The Network Operations Specialist works under the NOC Manager and monitors computer server and network performance. The Network Operations Specialist responds to system alerts and threats and duties related to network operations during one of three 24/5 shifts.</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
+			</div>
 		</div>
 
 		<div class="department-listing">
 			<div class="department-title">
-				<h3>Marketing</h3>
+				<h3 id="sales">Sales</h3>
 			</div>
-			<div class="position">
-				<p><b>Data Visualization Developer</b></p>
-				<p>The Data Visualization Developer will work collaboratively with designers and developers to create engaging and dynamic digital visuals across web-based and stand alone platforms. They will use programming paradigms and styles such as: Object Oriented Programming, Model View Controller, REST / WSDL / SOAP, and Object Relational Mapping.</p>
-			</div>
-			<div class="apply">
-				<a class="pure-button apply-button" href="">Learn more and Apply</a>
-			</div>
-
-			<div class="position">
-				<p><b>Event Specialist</b></p>
-				<p>The Event Specialist must be high-energy, detail oriented, and slightly crazy to help us pull of some of the biggest events in the sales and marketing space. We want someone that can think of event solutions outside of the box. We have an aggressive events schedule lined up and we need an individual that is willing to jump in head first and make a difference.</p>
-			</div>
-			<div class="apply">
-				<a class="pure-button apply-button" href="">Learn more and Apply</a>
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Business Development Representative</b></p>
+					<p>We are looking for talented Business Development Representatives who will contact and qualify marketing-generated leads and prospective customers. This is an entry-level sales position.</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
 			</div>
 
-			<div class="position">
-				<p><b>Front-end Web Developer</b></p>
-				<p>The Front End Web Developer will be responsible for front-end development and maintenance of our web properties. They will be responsible for building lead generation landing pages for email, paid search, and other channels. The ideal candidate will have front-end web experience, lead generation experience, a knowledge of landing page optimization principles, a love for building beautiful web pages, and an online portfolio to prove it.</p>
-			</div>
-			<div class="apply">
-				<a class="pure-button apply-button" href="">Learn more and Apply</a>
-			</div>
-
-			<div class="position">
-				<p><b>Product Manager</b></p>
-				<p>The product team at InsideSales.com is looking for an aspiring product manager who wants to work with one of the fastest growing SaaS companies in the country as a Product Manager. The position offers someone with a love of technology, research, and client interaction the chance to begin a career in product management.</p>
-			</div>
-			<div class="apply">
-				<a class="pure-button apply-button" href="">Learn more and Apply</a>
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Business Development Specialist</b></p>
+					<p>We are looking for talented Business Development Specialists who will contact and qualify marketing-generated leads to set appointments for our sales team to close. This is an inbound sales position, differing from the BDR position. The BDS should be a self-starter with a track record of successful, credible lead follow-up and sales development experience.</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
 			</div>
 
-			<div class="position">
-				<p><b>Website Testing Specialist</b></p>
-				<p>The Website Testing and Analytics Specialist will be responsible for website A/B testing by channel, and tracking website key performance indicators. If you&#39re a fan of Avinash Kaushik and Tim Ash and can help us take our website testing process to the next level then please apply.</p>
-			</div>
-			<div class="apply">
-				<a class="pure-button apply-button" href="">Learn more and Apply</a>
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Regional Sales Manager</b></p>
+					<p>InsideSales.com is seeking proven, highly motivated, high performance sales professionals to join the Utah based sales team.</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
 			</div>
 
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Sales Account Executive</b></p>
+					<p>InsideSales.com is experiencing explosive growth and welcomes you to come take a look at this life-changing opportunity. InsideSales.com is seeking proven, highly motivated, high performance sales professionals to join the Utah based sales team.</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
+			</div>
+
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Technical Sales Engineer</b></p>
+					<p>InsideSales.com is looking for a driven technical sales engineer who understands technology's formative capability to optimize business process. The Sales Engineer is responsible for presenting the InsideSales.com products, solutions and architecture in the best light to prospects and customers while removing all technical objections in the sales cycle.</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
+
+				<div class="pure-u-3-4 position">
+					<p><b>Corporate Enterprise Executive</b></p>
+					<p>The Corporate Enterprise Executive is a seasoned sales professional. They will be a top performer and effective communicator who is prepared to work with the executive level for major and named accounts. They report to the VP of Enterprise Sales, and may be required to travel on occasion to visit an enterprise client or prospective client. In addition to being an outstanding salesman, we need someone who is experienced with SaaS and technologically savvy. This is an inside sales role based at our corporate headquarters in Provo, UT.</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
+
+				<div class="pure-u-3-4 position">
+					<p><b>Regional Sales Director</b></p>
+					<p>The Regional Sales Director is a seasoned sales professional. They will be a top performer and effective communicator who is prepared to work with the executive level for major and named accounts. They report to the VP of Enterprise Sales, and may be required to travel on occasion to visit an enterprise client or prospective client. In addition to being an outstanding salesman, we need someone who is experienced with SaaS and technologically savvy. This is a field sales role based in the Northeast and Southeast United States regions.</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
+			</div>
 		</div>
-
-		<div class="department-listing">
-			<div class="department-title">
-				<h3>Information Systems</h3>
-			</div>
-			<div class="position">
-				<p><b>Disaster Recovery Engineer</b></p>
-				<p>We are looking for a Disaster Recovery Engineer to develop procedures to ensure critical business functions can resume, that data loss is minimized, and that failed systems are repaired or replaced quickly. They will apply a comprehensive knowledge of system disaster recovery and system capacity planning. They will play a key role in identifying and securing back-up systems and written policies and procedures, leveraging the latest trends in technology to help develop creative solutions that meet the needs of our customers.</p>
-			</div>
-			<div class="apply">
-				<a class="pure-button apply-button" href="">Learn more and Apply</a>
-			</div>
-
-			<div class="position">
-				<p><b>Network Operations Specialist</b></p>
-				<p>The Network Operations Specialist works under the NOC Manager and monitors computer server and network performance. The Network Operations Specialist responds to system alerts and threats and duties related to network operations during one of three 24/5 shifts.</p>
-			</div>
-			<div class="apply">
-				<a class="pure-button apply-button" href="">Learn more and Apply</a>
-			</div>
-
-		</div>
-
-		<div class="department-listing">
-			<div class="department-title">
-				<h3>Sales</h3>
-			</div>
-			<div class="position">
-				<p><b>Business Development Representative</b></p>
-				<p>We are looking for talented Business Development Representatives who will contact and qualify marketing-generated leads and prospective customers. This is an entry-level sales position.</p>
-			</div>
-			<div class="apply">
-				<a class="pure-button apply-button" href="">Learn more and Apply</a>
-			</div>
-
-			<div class="position">
-				<p><b>Business Development Specialist</b></p>
-				<p>We are looking for talented Business Development Specialists who will contact and qualify marketing-generated leads to set appointments for our sales team to close. This is an inbound sales position, differing from the BDR position. The BDS should be a self-starter with a track record of successful, credible lead follow-up and sales development experience.</p>
-			</div>
-			<div class="apply">
-				<a class="pure-button apply-button" href="">Learn more and Apply</a>
-			</div>
-
-			<div class="position">
-				<p><b>Regional Sales Manager</b></p>
-				<p>InsideSales.com is seeking proven, highly motivated, high performance sales professionals to join the Utah based sales team.</p>
-			</div>
-			<div class="apply">
-				<a class="pure-button apply-button" href="">Learn more and Apply</a>
-			</div>
-
-			<div class="position">
-				<p><b>Sales Account Executive</b></p>
-				<p>InsideSales.com is experiencing explosive growth and welcomes you to come take a look at this life-changing opportunity. InsideSales.com is seeking proven, highly motivated, high performance sales professionals to join the Utah based sales team.</p>
-			</div>
-			<div class="apply">
-				<a class="pure-button apply-button" href="">Learn more and Apply</a>
-			</div>
-
-			<div class="position">
-				<p><b>Technical Sales Engineer</b></p>
-				<p>InsideSales.com is looking for a driven technical sales engineer who understands technology's formative capability to optimize business process. The Sales Engineer is responsible for presenting the InsideSales.com products, solutions and architecture in the best light to prospects and customers while removing all technical objections in the sales cycle.</p>
-			</div>
-			<div class="apply">
-				<a class="pure-button apply-button" href="">Learn more and Apply</a>
-			</div>
-
-			<div class="position">
-				<p><b>Corporate Enterprise Executive</b></p>
-				<p>The Corporate Enterprise Executive is a seasoned sales professional. They will be a top performer and effective communicator who is prepared to work with the executive level for major and named accounts. They report to the VP of Enterprise Sales, and may be required to travel on occasion to visit an enterprise client or prospective client. In addition to being an outstanding salesman, we need someone who is experienced with SaaS and technologically savvy. This is an inside sales role based at our corporate headquarters in Provo, UT.</p>
-			</div>
-			<div class="apply">
-				<a class="pure-button apply-button" href="">Learn more and Apply</a>
-			</div>
-
-			<div class="position">
-				<p><b>Regional Sales Director</b></p>
-				<p>The Regional Sales Director is a seasoned sales professional. They will be a top performer and effective communicator who is prepared to work with the executive level for major and named accounts. They report to the VP of Enterprise Sales, and may be required to travel on occasion to visit an enterprise client or prospective client. In addition to being an outstanding salesman, we need someone who is experienced with SaaS and technologically savvy. This is a field sales role based in the Northeast and Southeast United States regions.</p>
-			</div>
-			<div class="apply">
-				<a class="pure-button apply-button" href="">Learn more and Apply</a>
-			</div>
-
-		</div>
-
-
-	</div>
+	</div><!--update-container-->
 
 
 
@@ -329,5 +353,6 @@
 	      </script>
 	</div>
 -->
+
 </body>
 </html>

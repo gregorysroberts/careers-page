@@ -1,23 +1,414 @@
-html {
-	background-color: #ededed;
+/* ---------- SMACSS Base Rules ---------- */
+
+body, h1, h2, h3, h4, h5, h6, p, li, div, input {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 300;
+    color: #3e4546;
+}
+body {
+    background-color: #ededed;
+}
+a {
+    color: #07a2bd;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+p, li, a, a.pure-button {
+	font-size: .9375em;
+}
+img {
+	max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top:0;
+    margin-bottom: 0;
+}
+h1, .h1-style {
+    font-size: 3.125em; /* 50px */
+    /*line-height: 3.75em;*/
+}
+h2, .h2-style {
+    font-size: 1.875em; /* 30px */
+}
+h3, .h3-style {
+    font-size: 1.25em; /* 20px */
+}
+h4, .h4-style {
+    font-size: .9375em; /* 15px */
+}
+h5, .h5-style {
+
+}
+h6, .h6-style {
+    font-size: 1em;
+}
+ul {
+    padding-left: 0;
+}
+ul li {
+    list-style-type: none;
+}
+.button-red, .button-blue {
+    border-radius: .25em;
+    box-shadow: 0em .25em .125em rgba(0, 0, 0, 0.2);
+    font-weight: 400;
+	color: #ffffff;
+    width: 8.125em;
+}
+.button-red:hover, .button-blue:hover {
+    box-shadow: 0em .18em .125em rgba(0, 0, 0, 0.2);
+	text-decoration: none;
+}
+.button-red {
+	background: #e8310e;
+}
+.button-blue {
+	background: #06b5d3;
+}
+.color-white {
+    color: #ffffff;
 }
 
-body{
-	font-family: Open Sans, Arial, sans-serif !important;
-	width: 960px;
+
+/* ---------- SMACSS Layout Rules ---------- */
+
+.pure-g-r {
+    margin: 0 auto;
+}
+.pure-g-r > div, .pure-g-r {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.l-center-left {
+    text-align: center;
+}
+.l-margin-0 {
+    margin: 0;
+}
+
+/* ---------- SMACSS Module Rules ---------- */
+
+.update-container {
+	box-shadow: .125em 0em .5em 0em rgba(0, 0, 0, 0.2), -.125em 0em .5em 0em rgba(0, 0, 0, 0.2);
 	margin: 0 auto;
-	box-shadow: 0px 0px 4px #888888;
-	color: #434b4d;
+    background-color: #FCFCFC;
+    padding: 0 1.25em;
+}
+.section {
+    margin: 0 auto;
+	box-sizing: border-box;
+    padding: 3.3125em 0;
+}
+.section-pillars h2 {
+    font-size: 1.5625em;
+    margin:0;
+}
+.section-pillars .pure-u-1-2, .section-cta .pure-u-1-3 {
+    margin-bottom: 2.25em;
+}
+.section-cta {
+	background-color: #434b4d;
+}
+.section-cta a.phone-number {
+	font-size: 1.5625em;
+	color: #ffffff;
+	font-weight: 300;
+}
+a.phone-number:hover {
+	text-decoration: none;
+}
+.section-cta h4, .section-cta h5, .section-cta p {
+	color: #ffffff;
+}
+.section-cta h4, .section-cta h5 {
+	font-weight: 700;
+}
+/*
+.section-featured {
+    padding-top: 2.3125em;
+    padding-bottom: 0;
+}
+*/
+.section-featured-container {
+	margin-bottom: 3.75em;
+}
+.section-featured-container:last-child {
+	margin-bottom: 0;
+}
+.section-featured-copy h3 {
+	text-transform: uppercase;
+}
+.section-footer {
+    padding-top: 0;
+}
+.section-footer ul {
+    margin:0;
+}
+.section-footer h3 {
+    margin-top:0;
+    margin-bottom:.5em;
+}
+div[class*='footer-'] {
+    padding: 3.3125em 0 2.3125em 0;
+    border-top: 1px solid #dedede;
+}
+.footer-searches {
+    display: none;
+}
+.footer-all-products .column {
+    float: left;
+    width: 50%;
+}
+.footer-searches a, .footer-nav .footer-nav-primary a, .footer-nav p {
+    font-size: .875em;
+    color: #3e4546;
+}
+.footer-nav-secondary {
+    color: #07a2bd;
+}
+.footer-nav-primary li, .footer-nav-secondary li {
+    float:left;
+}
+.footer-nav p {
+    clear: left;
+}
+/*
+div.footer-all-products {
+    border-top: 1px solid #dedede;
+}
+*/
+.footer-nav {
+    padding-bottom:0;
 }
 
-h1 {
-	font-size: 2.83em;
-	font-weight: normal;
-	margin-top: 0px;
+/* ---------- SMACSS State Rules ---------- */
+
+.is-hidden {
+    display: none;
+}
+.hide-for-mobile {
+    display: none;
+}
+.hide-for-tablet-down {
+    display: none;
+}
+.modal.fade {
+    transition-delay: 0s, 0s;
+    -webkit-transition-delay: 0s, 0s;
+
+    transition-duration: 0.3s, 0.3s;
+    -webkit-transition-duration: 0.3s, 0.3s;
+
+    transition-property: opacity, top;
+    -webkit-transition-property: opacity, top;
+
+    transition-timing-function: linear, ease-out;
+    -webkit-transition-timing-function: linear, ease-out;
+}
+
+/* ---------- Firefox Specific Styles ------------------ */
+@-moz-document url-prefix() {
+/*
+    body {
+        font-size: 2.5em;
+    }
+*/
+}
+
+/*---------Mobile Only Styles------------*/
+@media only screen and (max-width:30em) {
+    .parallax {
+        background-position: 50%!important;
+    }
+}
+/* ---------- Start Tablet Styles ------------------ */
+@media only screen and (min-width:30.0625em) and (max-width:47.9375em) {
+     .l-center-left {
+        text-align: center;
+    }
+    .hide-for-mobile {
+        display: inline-block;
+    }
+    .hide-for-tablet-down {
+        display: none;
+    }
+    .hide-for-tablet-up {
+        display: none;
+    }
+    .modal {
+        margin-left: -240px;
+        width: 480px;
+    }
+}
+
+/* ---------- Start Tablet 2 Styles ------------------ */
+@media only screen and (min-width:48em) and (max-width:63.9375em) {
+    .l-center-left {
+        text-align: left;
+    }
+    .hide-for-mobile {
+        display: inline-block;
+    }
+    .hide-for-tablet-down {
+        display: none;
+    }
+    .hide-for-tablet-up {
+        display: none;
+    }
+}
+
+/* ---------- Start Desktop Styles ------------------ */
+
+@media only screen and (min-width: 64em) {
+    .l-center-left {
+        text-align: left;
+    }
+    .update-container {
+        max-width: 60em;
+        padding: 0;
+    }
+    .modal {
+        margin-left: -280px;
+        width: 560px;
+    }
+    .section {
+        /*max-width: 60em;*/
+		padding: 3.3125em 4.375em;
+	}
+	.section-pillars {
+		padding-left: 6.5em;
+	}
+    .pillar-icon {
+        float: left;
+        margin-right: .875em;
+    }
+    .pillar-copy {
+        float: left;
+        max-width: 17.375em; /* 278px */
+    }
+	.section-cta {
+		padding-right: 6em;
+		padding-left: 4.375em;
+		padding-top: .5em;
+		padding-bottom: 2.75em;
+	}
+    .section-cta .pure-u-1-3 {
+        padding-right: 4em;
+        margin-bottom: 0;
+    }
+    .section-cta .pure-u-1-3:last-child {
+        padding-right: 0;
+    }
+    .section-featured {
+        padding-top: 2.3125em;
+        padding-bottom: 0;
+    }
+    .section-featured-image {
+        float: left;
+        clear: left;
+        padding-right: 3.75em;
+    }
+    .footer-all-products {
+        padding-top:0;
+    }
+    .footer-searches {
+        display: block;
+    }
+    .footer-all-products .column, .footer-searches .column {
+        float:left;
+        width:25%;
+    }
+    .footer-nav {
+        padding-bottom:0;
+    }
 }
 
 
-.banner {
+
+
+
+
+
+/*=====================Greg's Styles==================================*/
+
+.board {
+	margin: 20px 0;
+}
+
+.board img {
+	width: 190px;
+	float: left;
+    margin-right: 20px;
+}
+
+.board-bio {
+	background: #ededed;
+	border-top: 5px solid #07a2bd;
+	padding: 12px 20px;
+	min-height: 241px;
+}
+
+.board-bio p {
+	margin-bottom: 0px;
+}
+
+.board-bio-content {
+	margin-top: 10px;
+}
+
+.advisory {
+    margin-top: 57px;
+}
+
+.advisor {
+    padding-top: 20px;
+    display: inline-block;
+    float: left;
+}
+
+.advisor img {
+    width: 120px;
+    float: left;
+    margin-right: 20px;
+}
+
+.advisor-bio {
+    background: #ededed;
+    border-top: 5px solid #07a2bd;
+    min-height: 145px;
+    padding-right: 20px;
+}
+
+.advisor-bio-content {
+    margin-top: 10px;
+}
+
+.right {
+    margin-right: 10px;
+}
+
+.left {
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 462px) {
+    .advisor-bio {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 756px) {
+    .board-bio {
+        display: inline-block;
+    }
+}
+
+/*===================Careers Page============================*/
+.careers-banner {
 	background-image: url('http://www.insidesales.com/images/careers-banner.jpg'); 
 	background-size: 960px 635px;
 	background-repeat: no-repeat;
@@ -26,17 +417,19 @@ h1 {
 	border-bottom: 5px solid #e9310e;
 }
 
-.banner-content {
+.careers-banner-content {
 	padding-top: 124px;
 	margin-left: 495px;
 	margin-top: 0px;
 }
 
-.banner-content h1 {
-	font-size: 2.83em;
-	font-weight: normal;
+.careers-banner-content h1 {
+	color: #ffffff;
 }
 
+.careers-banner-content p {
+	color: #ffffff;
+}
 
 .banner-content p {
 	font-size: 0.9375em;
@@ -64,30 +457,25 @@ h1 {
 }
 
 .videoHeroMobile {
-	width: 475px;
-    background-size: 100% auto;
+    background-size: cover;
     background-position: top center;
     background-image: url('http://static.insidesales.com/assets/images/science-of-sales-screenshot-mobile2.jpg');
-    /*height: 234px;*/
-    height: 0;
     background-repeat: no-repeat;
     text-align: center;
-    padding-bottom: 31%;
     display: inline-block;
     float: left;
+    height: 295px;
 }
 
 .videoHeroMobile2 {
-	width: 509px;
-    background-size: 100% auto;
+    background-size: cover;
     background-position: top center;
     background-image: url('http://www.insidesales.com/images/do-good-foundation-video.jpg');
-    /*height: 234px;*/
-    height: 285px;
     background-repeat: no-repeat;
     text-align: center;
     display: inline-block;
     float: right;
+    height: 285px;
 }
 
 #frameVideo {
@@ -109,13 +497,11 @@ h1 {
 }
 
 .what-we-do-content {
-	padding: 42px 70px 0px 20px;
+	padding: 42px 70px 32px 20px;
 	font-weight: 200;
-	width: 395px;
 	display: inline-block;
 	float: right;
 	background-color: #ffffff;
-	height: 253px;
 	margin: 0;
 }
 
@@ -139,9 +525,9 @@ h2 {
 }
 
 .benefits {
+	background-color: #ededed;
 	clear: both;
-	height: 185px;
-	padding: 37px 50px 0 70px;
+	padding: 37px 50px 70px 70px;
 }
 
 .benefits h2 {
@@ -157,35 +543,25 @@ h2 {
 .benefits-content {
 	padding-top: 37px;
 	display: inline-block;
-	width: 256px;
 	padding-right: 20px;
 }
 
 .do-good {
 	clear: both;
-	height: 285px;
 	margin: 0;
-	background-color: #434b4d;
 }
 
 .do-good-content {
 	padding: 37px 20px 0px 70px;
 	font-weight: 200;
-	width: 361px;
 	display: inline-block;
 	float: left;
 	background-color: #ffffff;
-	height: 248px;
 	margin: 0;
 }
 
 .do-good-content {
 	color: #3e4546;
-}
-
-.do-good-content p {
-	color: 
-	margin: 5px 0 0 0;
 }
 
 .open-positions {
@@ -200,12 +576,18 @@ h2 {
 	background-color: #434b4d;
 	color: #ffffff;
 	border-bottom: 5px solid #e9310e;
+	padding-bottom: 41px;
+}
+
+#open-positions {
+	color: #ffffff;
 }
 
 .departments {
 	background-color: #ffffff;
 	text-align: center;
 	margin-bottom: -10px;
+	padding: 0 70px;
 }
 
 .department {
