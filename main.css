@@ -133,6 +133,32 @@ a.phone-number:hover {
     padding-bottom: 0;
 }
 */
+.section.section-video {
+    background-image: url('http://static.insidesales.com/assets/images/images-video-still-c.jpg');
+    background-size: contain;
+    padding-top: 0px;
+    position: relative;
+    /*padding-bottom: 56.25%;*/
+    padding-bottom: 46.35%;
+    height: 0;
+    border-top: 0.3125em solid #e8310e;    
+}
+.section-video-play {
+    text-align: center;
+    /*margin-top: 23%;*/
+    position: relative;
+    /*top: 42%;*/
+    top: 38%;
+}
+.section-video-play p {
+    color: #ffffff;
+    font-size: 1.375em;
+    margin: 0;
+    margin-top: .125em;
+}
+.section-video-play img {
+    width: 3.5em;
+}
 .section-featured-container {
 	margin-bottom: 3.75em;
 }
@@ -191,7 +217,7 @@ div.footer-all-products {
     display: none;
 }
 .hide-for-mobile {
-    display: none;
+    display: hidden;
 }
 .hide-for-tablet-down {
     display: none;
@@ -279,6 +305,18 @@ div.footer-all-products {
         /*max-width: 60em;*/
 		padding: 3.3125em 4.375em;
 	}
+    .section-video-play {
+        top: 42%;
+    }
+    .section-video-play p {
+        color: #ffffff;
+        font-size: 1.75em;
+        margin: 0;
+        margin-top: .125em;
+    }
+    .section-video-play img {
+        width: auto;
+    }
 	.section-pillars {
 		padding-left: 6.5em;
 	}
@@ -330,83 +368,6 @@ div.footer-all-products {
 
 
 
-
-
-
-/*=====================Greg's Styles==================================*/
-
-.board {
-	margin: 20px 0;
-}
-
-.board img {
-	width: 190px;
-	float: left;
-    margin-right: 20px;
-}
-
-.board-bio {
-	background: #ededed;
-	border-top: 5px solid #07a2bd;
-	padding: 12px 20px;
-	min-height: 241px;
-}
-
-.board-bio p {
-	margin-bottom: 0px;
-}
-
-.board-bio-content {
-	margin-top: 10px;
-}
-
-.advisory {
-    margin-top: 57px;
-}
-
-.advisor {
-    padding-top: 20px;
-    display: inline-block;
-    float: left;
-}
-
-.advisor img {
-    width: 120px;
-    float: left;
-    margin-right: 20px;
-}
-
-.advisor-bio {
-    background: #ededed;
-    border-top: 5px solid #07a2bd;
-    min-height: 145px;
-    padding-right: 20px;
-}
-
-.advisor-bio-content {
-    margin-top: 10px;
-}
-
-.right {
-    margin-right: 10px;
-}
-
-.left {
-    margin-left: 10px;
-}
-
-@media only screen and (max-width: 462px) {
-    .advisor-bio {
-        display: inline-block;
-    }
-}
-
-@media only screen and (max-width: 756px) {
-    .board-bio {
-        display: inline-block;
-    }
-}
-
 /*===================Careers Page============================*/
 .careers-banner {
 	background-image: url('http://www.insidesales.com/images/careers-banner.jpg'); 
@@ -415,12 +376,13 @@ div.footer-all-products {
 	height: 449px;
 	color: #ffffff;
 	border-bottom: 5px solid #e9310e;
+    background-position: 36% 0%;
 }
 
 .careers-banner-content {
 	padding-top: 124px;
-	margin-left: 495px;
-	margin-top: 0px;
+	margin-right: 13%;
+    float: right;
 }
 
 .careers-banner-content h1 {
@@ -513,12 +475,6 @@ div.footer-all-products {
 	color: #636466;
 }
 
-h2 {
-	font-weight: 200;
-	font-size: 1.875em;
-	margin: 0;
-}
-
 .what-we-do-content p {
 	margin: 0;
 	padding-top: 6px;
@@ -600,7 +556,8 @@ h2 {
 } 
 
 .department-listing {
-	margin: 53px 70px 0 70px;
+	padding: 53px 70px 0 70px;
+    background-color: #ffffff;
 }
 
 .department-title {
@@ -636,4 +593,58 @@ h2 {
 
 .apply-button {
 	padding: 4px 18.5px;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 0px;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+}
+
+.back-to-top:hover {    
+    background-color: rgba(135, 135, 135, 0.50);
+}
+
+@media only screen and (max-width: 480px) {
+    .careers-banner-content {
+        margin-right: 4%;
+    }
+
+    .careers-banner-content h1 {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .what-we-do-content {
+        padding: 20px 0;
+    }
+
+    .do-good-content {
+        padding: 20px 0;
+    }
+
+    .benefits {
+        padding: 20px 0;
+    }
+
+    .department-listing {
+        padding: 50px 0;
+    }
+
+    .open-positions-banner {
+        padding-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 996px) {
+    .apply {
+        margin-top: 0px;
+    }
 }

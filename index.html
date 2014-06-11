@@ -7,15 +7,12 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.6/angular.min.js"></script>
-	<script type="text/javascript" src="http://angular-ui.github.io/ui-router/release/angular-ui-router.min.js"></script>
-
 </head>
 <body>
 	<!--Banner-->
 	<div class="update-container">
-		<div class="pure-g-r careers-banner">
-			<div class="pure-u-1 careers-banner-content">
+		<div class="careers-banner">
+			<div class="careers-banner-content">
 				<h1>InsideSales.com<br /> Careers</h1>
 				<p>Here's a bit of what you can 
 				<br />expect when you work here:</p>
@@ -25,17 +22,24 @@
 
 		<!--What We Do Section-->
 		<div class="pure-g-r">
+			<div class="pure-u-1-2 hide-for-tablet-up" data-set="career-video">
+
+			</div>
 			<!--Commercial Video-->
 	        <div class="pure-u-1-2 videoHeroMobile">
-	            <a href="#" data-reveal-id="myModal">
-	                <img id="circlePlay" class="videoPlay" src="http://static.insidesales.com/assets/images/video-play-white-2.png" onmouseover="swapIcon();" onmouseout="replaceIcon();">
-	            </a>
+	        	<div class="section-video-play">
+		            <a href="#" data-reveal-id="myModal">
+		                <img src="http://static.insidesales.com/assets/images/images-play-button-c.png" alt="What We Do video">
+		                <p>Play Video</p>
+		            </a>
+		        </div>
 	        </div>
-			<!--What We Do Content-->
-			<div class="pure-u-1-2 what-we-do-content">
-				<h2>What We Do</h2>
-				<p>InsideSales.com is the market leader in the emerging sales acceleration market. Breakthrough innovations in cloud-based communications, gamiﬁcation, predictive analytics and data visualization have helped make the company one of the hottest employers in the United States. In fact, Inc. Magazine recently recognized the company as the 5th fastest growing software company in the country.</p>
-			</div>
+
+	     	<div class="pure-u-1-2 what-we-do-content hide-for-mobile" data-set="career-video">
+				<h2 class="move-content">What We Do</h2>
+				<p class="move-content">InsideSales.com is the market leader in the emerging sales acceleration market. Breakthrough innovations in cloud-based communications, gamiﬁcation, predictive analytics and data visualization have helped make the company one of the hottest employers in the United States. In fact, Inc. Magazine recently recognized the company as the 5th fastest growing software company in the country.</p>
+	     	</div>
+
 		</div>
 
 		<!--Employee Benefits-->
@@ -72,9 +76,12 @@
 			</div>
 			<!--Do Good Video-->
 	    	<div class="pure-u-1-2 videoHeroMobile2">
-	            <a href="#" data-reveal-id="myModal">
-	                <img id="circlePlay2" class="videoPlay" src="http://static.insidesales.com/assets/images/video-play-white-2.png" onmouseover="swapIcon2();" onmouseout="replaceIcon2();">
-	            </a>
+	    		<div class="section-video-play">
+		            <a href="#" data-reveal-id="myModal">
+		                <img src="http://static.insidesales.com/assets/images/images-play-button-c.png" alt="Do Good Foundation video">
+		                <p>Play Video</p>
+		            </a>
+		        </div>
 	       </div>
 	    </div>
 
@@ -302,13 +309,139 @@
 				</div>
 			</div>
 		</div>
+
+
+		<div class="department-listing">
+			<div class="department-title">
+				<h3 id="software-development">Software Development</h3>
+			</div>
+
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Application Architect</b></p>
+					<p>We are looking for talented and expert Application Architects to develop the next-generation technologies for which we've become the industry leader. In addition to revolutionizing sales automation and lead management technologies, we use our world-class programming skills to innovate in a number of other areas as well</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
+			</div>
+
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Associate UI Designer</b></p>
+					<p>The product team at InsideSales.com is looking for aspiring designer who wants to work in web interface design. The position offers someone entering the design field the ability to specialize in web interface design which is an increasingly highly sought after discipline.</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
+			</div>
+
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Data Visualization Developer</b></p>
+					<p>The Data Visualization Developer will work collaboratively with designers and developers to create engaging and dynamic digital visuals across web-based and stand alone platforms.</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
+			</div>
+
+
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Principal Research and Development Manager</b></p>
+					<p>We are looking for talented and expert Principal Research and Development Manager to develop the next-generation technologies for which we've become the industry leader. In addition to revolutionizing sales automation and lead management technologies, we use our world-class programming skills to innovate in a number of other areas as well</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
+			</div>
+
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Product Development Manager</b></p>
+					<p>We are looking for talented and expert Product Development Manager to develop the next-generation technologies for which we've become the industry leader. In addition to revolutionizing sales automation and lead management technologies, we use our world-class programming skills to innovate in a number of other areas as well</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
+			</div>
+
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Product Manager</b></p>
+					<p>The product team at InsideSales.com is looking for an aspiring product manager who wants to work with one of the fastest growing SaaS companies in the country as a Product Manager. The position offers someone with a love of technology, research, and client interaction the chance to begin a career in product management.</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
+			</div>
+
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Project Manager</b></p>
+					<p>Insidesales.com is seeking a talented Project Manager (Scrum Master) who will provide project leadership, direction and support for software development teams. This role requires a dynamic individual capable of managing simultaneous complex, cross-functional projects while maintaining close working relationships with product owners and technical teams.</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
+			</div>
+
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Quality Assurance Engineer</b></p>
+					<p>InsideSales.com is looking for an entry level Quality Assurance Engineer to work with our award winning suite of lead management, CRM and dialer software tools. If you are looking to enter into the world of software testing this is an excellent foot hold into the market.</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
+			</div>
+
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Quality Assurance Manager</b></p>
+					<p>InsideSales.com is looking for an entry level Quality Assurance Manager to work with our award winning suite of lead management, CRM and dialer software tools. If you are looking to enter into the world of software testing this is an excellent foot hold into the market.</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
+			</div>
+
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Quality Assurance Specialist</b></p>
+					<p>We are looking for key players in the support of our technology and existing products. As a Quality Assurance Specialist you work to obtain requested information, resolve problems, and identify opportunities for improvement. We rely on our Quality Assurance Specialists to ensure the integrity of our product so that we may continue to provide the leading Inside Sales technology to our customers.</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
+			</div>
+
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Software Engineer</b></p>
+					<p>We are looking for talented and expert Software Engineers to develop the next-generation technologies for which we've become the industry leader. In addition to revolutionizing sales automation and lead management technologies, we use our world-class programming skills to innovate in a number of other areas as well</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
+			</div>
+
+			<div class="pure-g-r">
+				<div class="pure-u-3-4 position">
+					<p><b>Senior Software Engineer</b></p>
+					<p>We are looking for talented and expert Software Engineers to develop the next-generation technologies for which we've become the industry leader. In addition to revolutionizing sales automation and lead management technologies, we use our world-class programming skills to innovate in a number of other areas as well</p>
+				</div>
+				<div class="pure-u-1-4 apply">
+					<a class="pure-button apply-button" href="">Learn more and Apply</a>
+				</div>
+			</div>
+		</div>
+		<a href="#open-positions" class="back-to-top">Back to Departments</a>
 	</div><!--update-container-->
 
 
 
-
-
-<!--Video Modal
      <div id="myModal" class="reveal-modal">
         <div class="videoContainer">
             <iframe id="frameVideo" src="//www.youtube.com/embed/lNMtQ4W--EI?rel=0" frameborder="0" allowfullscreen style="width:100%; height:100%;"></iframe>
@@ -352,7 +485,51 @@
 
 	      </script>
 	</div>
--->
+
+	<script>
+		/* appendAround pattern. [c]2012, @scottjehl, Filament Group, Inc. MIT/GPL */
+		(function( $ ){
+			$.fn.appendAround = function(){
+		    	return this.each(function(){
+		    		var $self = $( this ),
+		        	att = "data-set",
+		        	$set = $( "["+ att +"='"+ $self.closest( "["+ att +"]" ).attr( att ) + "']" );
+		    		function appendToVisibleContainer(){
+			        	if( $self.is( ":hidden" ) ){
+			        		$self.appendTo( $set.filter( ":visible:eq(0)" ) );
+			        	}
+		      		}
+						appendToVisibleContainer();
+						$(window).resize( appendToVisibleContainer );
+					});
+				};  
+				//try it out
+				$( ".move-content" ).appendAround();  
+		}( jQuery ));
+	</script>
+
+<!--======Scroll to Top Button===============-->
+	<script>
+		$(document).ready(function() {
+			var scrollTop = $(window).scrollTop();
+		    var elementOffset = $('#open-positions').offset().top;
+			var distance = (elementOffset - scrollTop - 100);		   
+		    var duration = 500;
+		    $(window).scroll(function() {
+		        if ($(this).scrollTop() > distance) {
+		            $('.back-to-top').fadeIn(duration);
+		        } else {
+		            $('.back-to-top').fadeOut(duration);
+		        }
+		    });
+		    
+		    $('.back-to-top').click(function(event) {
+		        event.preventDefault();
+		        $('html, body').animate({scrollTop: 0}, duration);
+		        return false;
+		    })
+		});
+	</script>
 
 </body>
 </html>
